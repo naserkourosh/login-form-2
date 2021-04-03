@@ -1,0 +1,115 @@
+@font-face{
+    font-family: websans;
+    src: url('./WorkSans.woff');
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: websans;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(228, 228, 228);
+}
+.wrapper{
+    width: 28rem;
+    height: 24rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+}
+.img-content{
+    position: relative;
+    width: 100%;
+    height: 8rem;
+    background-image: url('./background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* filter: brightness(60%); */
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+.matt{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(63, 63, 63, 0.356);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+h3{
+    color: #fff;
+}
+.form{
+    width: 100%;
+    height: calc(100% - 8rem);
+    display: flex;
+    flex-direction: row;
+    color: rgb(170, 170, 170);
+    padding: 2rem;
+    justify-content: space-between;
+}
+.form a{
+    text-decoration: none;
+    color: inherit;
+    font-size: .6rem;
+}
+.remember{
+    width: 100%;
+    display: flex;
+    padding: 0.8rem 0;
+    font-size: .6rem;
+    justify-content: space-between;
+}
+
+.right{
+    padding: 0 1rem;
+    margin-left: 1rem;
+}
+.label-container{
+    padding: 0.9rem 0 0.9rem 2rem;
+}
+label{
+    font-size: .7rem;
+    color: rgb(117, 117, 117);
+}
+.right #usernameText,.right #passText {
+    width: 100%;
+    padding: .8rem .4rem;
+    border: none;
+    border-bottom: 1px solid rgb(206, 206, 206);
+    outline: none;
+    box-sizing: border-box;
+}
+.right > input::placeholder{
+    font-size: .7rem;
+    color: rgb(187, 187, 187);
+}
+input[type='checkbox']{
+    opacity: .3;
+    vertical-align: middle;
+}
+input[type='submit']{
+    background-color: rgb(105, 192, 120);
+    color:#fff;
+    padding:.8rem 3rem ;
+    border-radius: 28px;
+    border: none;
+    outline: none;
+}
+
